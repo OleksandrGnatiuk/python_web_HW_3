@@ -47,3 +47,23 @@
 2023-02-26 15:08:00,790 [INFO] - __main__ -       sort_file:126 - Empty folder '/home/oleksandr/Стільниця/trash/каток' was removed
 2023-02-26 15:08:00,837 [INFO] - __main__ -       sort_file:138 - Archiv 'arhiv.zip' was unpacked
 2023-02-26 15:08:00,838 [ERROR] - __main__ -       sort_file:141 - Error unpacking the archive 'bitij_arhiv.zip'!
+2023-02-26 22:42:42,932 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-2]: 128
+2023-02-26 22:42:42,933 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 255
+2023-02-26 22:42:43,000 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 99999
+2023-02-26 22:42:45,732 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-2]: 10651060
+2023-02-26 22:44:04,338 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 128
+2023-02-26 22:44:04,343 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-2]: 255
+2023-02-26 22:44:04,425 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 99999
+2023-02-26 22:44:06,705 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-2]: 10651060
+2023-02-26 22:46:10,362 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-2]: 128
+2023-02-26 22:46:10,373 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 255
+2023-02-26 22:46:10,441 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 99999
+2023-02-26 22:46:12,694 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-2]: 10651060
+2023-02-26 22:47:00,569 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 128
+2023-02-26 22:47:00,580 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 255
+2023-02-26 22:47:00,641 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 99999
+2023-02-26 22:47:02,882 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-3]: 10651060
+2023-02-26 22:47:37,527 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 128
+2023-02-26 22:47:37,541 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 255
+2023-02-26 22:47:37,606 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-1]: 99999
+2023-02-26 22:47:39,836 [INFO] - __main__ -     create_list:44 - [ForkPoolWorker-3]: 10651060

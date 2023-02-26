@@ -1,0 +1,49 @@
+2023-02-26 13:24:20,786 [INFO] - __main__ -  is_fold_exists:59 - Folder with name /home/oleksandr/Стільниця/trash/documents was not exist and was created
+2023-02-26 13:24:20,786 [INFO] - __main__ -       normalize:35 - File name саша.doc was normalized
+2023-02-26 13:24:20,788 [INFO] - __main__ -     folder_sort:70 - File with name /home/oleksandr/Стільниця/trash/докум/саша.doc was removed to /home/oleksandr/Стільниця/trash/documents
+2023-02-26 13:24:20,789 [INFO] - __main__ -       normalize:35 - File name саша.doc was normalized
+2023-02-26 13:24:20,797 [INFO] - __main__ -  is_fold_exists:59 - Folder with name /home/oleksandr/Стільниця/trash/archives was not exist and was created
+2023-02-26 13:24:20,798 [INFO] - __main__ -  is_file_exists:47 - File with name sasha is already exists and was renaed to sasha_26_02_2023_13_24_20_798337_.doc
+2023-02-26 13:24:20,800 [INFO] - __main__ -     folder_sort:70 - File with name /home/oleksandr/Стільниця/trash/саша.doc was removed to /home/oleksandr/Стільниця/trash/documents
+2023-02-26 13:24:20,806 [INFO] - __main__ -       normalize:35 - File name архів.zip was normalized
+2023-02-26 13:24:20,807 [INFO] - __main__ -     folder_sort:70 - File with name /home/oleksandr/Стільниця/trash/завантжен/архів.zip was removed to /home/oleksandr/Стільниця/trash/archives
+2023-02-26 13:24:20,811 [INFO] - __main__ -       normalize:35 - File name битий архів.zip was normalized
+2023-02-26 13:24:20,813 [INFO] - __main__ -  is_fold_exists:59 - Folder with name /home/oleksandr/Стільниця/trash/other was not exist and was created
+2023-02-26 13:24:20,814 [INFO] - __main__ -     folder_sort:70 - File with name /home/oleksandr/Стільниця/trash/битий архів.zip was removed to /home/oleksandr/Стільниця/trash/archives
+2023-02-26 13:24:20,816 [INFO] - __main__ -       normalize:35 - File name Quadrilateral.py was normalized
+2023-02-26 13:24:20,817 [INFO] - __main__ -     folder_sort:70 - File with name /home/oleksandr/Стільниця/trash/aaaaa/Quadrilateral.py was removed to /home/oleksandr/Стільниця/trash/other
+2023-02-26 13:24:20,817 [INFO] - __main__ -       normalize:35 - File name Building.py was normalized
+2023-02-26 13:24:20,819 [INFO] - __main__ -     folder_sort:70 - File with name /home/oleksandr/Стільниця/trash/aaaaa/Building.py was removed to /home/oleksandr/Стільниця/trash/other
+2023-02-26 13:24:20,822 [INFO] - __main__ -       normalize:35 - File name саша.doc was normalized
+2023-02-26 13:24:20,828 [INFO] - __main__ -  is_file_exists:47 - File with name sasha is already exists and was renaed to sasha_26_02_2023_13_24_20_827965_.doc
+2023-02-26 13:24:20,828 [INFO] - __main__ -     folder_sort:70 - File with name /home/oleksandr/Стільниця/trash/aaaaa/саша.doc was removed to /home/oleksandr/Стільниця/trash/documents
+2023-02-26 13:24:20,833 [INFO] - __main__ -       normalize:35 - File name City.py was normalized
+2023-02-26 13:24:20,835 [INFO] - __main__ -       normalize:35 - File name Rectangle.py was normalized
+2023-02-26 13:24:20,844 [INFO] - __main__ -       sort_file:148 - Empty folder /home/oleksandr/Стільниця/trash/докум was removed
+2023-02-26 13:24:20,846 [INFO] - __main__ -       sort_file:148 - Empty folder /home/oleksandr/Стільниця/trash/завантжен was removed
+2023-02-26 13:24:20,844 [INFO] - __main__ -     folder_sort:70 - File with name /home/oleksandr/Стільниця/trash/aaaaa/City.py was removed to /home/oleksandr/Стільниця/trash/other
+2023-02-26 13:24:20,847 [INFO] - __main__ -     folder_sort:70 - File with name /home/oleksandr/Стільниця/trash/aaaaa/Rectangle.py was removed to /home/oleksandr/Стільниця/trash/other
+2023-02-26 13:24:20,906 [INFO] - __main__ -       sort_file:137 - Archiv arhiv.zip was unpacked
+2023-02-26 13:24:20,912 [ERROR] - __main__ -       sort_file:140 - Error unpacking the archive 'bitij_arhiv.zip'!
+2023-02-26 13:24:20,920 [INFO] - __main__ -       sort_file:148 - Empty folder /home/oleksandr/Стільниця/trash/aaaaa was removed
+2023-02-26 14:40:24,531 [ERROR] - __main__ -            main:168 - The folder with path /home/oleksandr/Стільниця/trash/1 was not found
+2023-02-26 14:44:29,551 [ERROR] - __main__ -            main:168 - The folder with path '/home/oleksandr/Стільниця/trash/1' was not found
+2023-02-26 14:54:21,515 [ERROR] - __main__ -            main:168 - The folder with path '/home/oleksandr/Стільниця/trash/1' was not found
+2023-02-26 14:54:43,810 [INFO] - __main__ -       normalize:34 - File name 'таня.doc' was normalized
+2023-02-26 14:54:43,818 [INFO] - __main__ -       normalize:34 - File name 'таня.doc' was normalized
+2023-02-26 14:54:43,825 [INFO] - __main__ -       sort_file:147 - Empty folder '/home/oleksandr/Стільниця/trash/каток' was removed
+2023-02-26 14:54:43,848 [INFO] - __main__ -  is_file_exists:46 - File with name 'tanya' is already exists and was renamed to tanya_26_02_2023_14_54_43_847639_.doc
+2023-02-26 14:54:43,869 [INFO] - __main__ -       sort_file:136 - Archiv 'arhiv.zip' was unpacked
+2023-02-26 14:54:43,872 [ERROR] - __main__ -       sort_file:139 - Error unpacking the archive 'bitij_arhiv.zip'!
+2023-02-26 14:57:35,689 [INFO] - __main__ -       sort_file:136 - Archiv 'arhiv.zip' was unpacked
+2023-02-26 14:57:35,690 [ERROR] - __main__ -       sort_file:139 - Error unpacking the archive 'bitij_arhiv.zip'!
+2023-02-26 15:00:28,259 [INFO] - __main__ -       sort_file:136 - Archiv 'arhiv.zip' was unpacked
+2023-02-26 15:00:28,260 [ERROR] - __main__ -       sort_file:139 - Error unpacking the archive 'bitij_arhiv.zip'!
+2023-02-26 15:05:20,986 [INFO] - __main__ -       normalize:34 - File name 'саша.doc' was normalized
+2023-02-26 15:05:20,994 [INFO] - __main__ -  is_file_exists:46 - File with name 'sasha' is already exists and was renamed to sasha_26_02_2023_15_05_20_994325_.doc
+2023-02-26 15:05:20,994 [INFO] - __main__ -     folder_sort:69 - File with name 'саша.doc' was removed to /home/oleksandr/Стільниця/trash/documents
+2023-02-26 15:05:21,021 [INFO] - __main__ -       sort_file:138 - Archiv 'arhiv.zip' was unpacked
+2023-02-26 15:05:21,026 [ERROR] - __main__ -       sort_file:141 - Error unpacking the archive 'bitij_arhiv.zip'!
+2023-02-26 15:08:00,790 [INFO] - __main__ -       sort_file:126 - Empty folder '/home/oleksandr/Стільниця/trash/каток' was removed
+2023-02-26 15:08:00,837 [INFO] - __main__ -       sort_file:138 - Archiv 'arhiv.zip' was unpacked
+2023-02-26 15:08:00,838 [ERROR] - __main__ -       sort_file:141 - Error unpacking the archive 'bitij_arhiv.zip'!

@@ -9,7 +9,6 @@ from logger_ import get_logger
 
 logger = get_logger(__name__)
 
-
 # Dictionary for set the rules of sorting files:
 extension_dict = {
     "documents": [".doc", ".docx", ".xls", ".xlsx", ".txt", ".pdf"],
@@ -32,7 +31,7 @@ for c, t in zip(CYRILLIC_SYMBOLS, TRANSLATION):
 def normalize(name):
     """Change Cyrillic letters to Latin letters"""
     global TRANS
-    logger.info(f'File name {name} was normalized')
+    logger.info(f"File name '{name}' was normalized")
     return name.translate(TRANS)
 
 
@@ -44,7 +43,7 @@ def is_file_exists(file, to_dir):
         add_name = datetime.now().strftime("%d_%m_%Y_%H_%M_%S_%f")
         new_name = file.resolve().stem + f"_{add_name}_" + file.suffix
         new_name_path = Path(to_dir, new_name)
-        logger.info(f'File with name {file.resolve().stem} is already exists and was renamed to {new_name}')
+        logger.info(f"File with name '{file.resolve().stem}' is already exists and was renamed to {new_name}")
         return new_name_path
     return file
 
@@ -56,7 +55,7 @@ def is_fold_exists(file, to_dir):
         Thread(target=folder_sort, args=(file, to_dir)).start()
     else:
         Path(to_dir).mkdir()
-        logger.info(f'Folder with name {to_dir} was not exist and was created')
+        logger.info(f"Folder with name '{to_dir}' was not exist and was created")
         Thread(target=folder_sort, args=(file, to_dir)).start()
     
 
@@ -67,7 +66,7 @@ def folder_sort(file, to_dir):
     new_file = Path(to_dir, latin_name) 
     file_path = is_file_exists(new_file, to_dir) 
     file.replace(file_path) 
-    logger.info(f'File with name {file} was removed to {to_dir}')
+    logger.info(f"File with name '{file.name}' was removed to {to_dir}")
 
 
 
@@ -124,6 +123,8 @@ def sort_file(folder, p):
                 sort_file(folder, i) # if folder is not empty, recursively sort_file()
             else:
                 shutil.rmtree(i)  # delete empty folders
+                logger.info(f"Empty folder '{i}' was removed")
+
 
     for j in p.iterdir():
         # unpacking archives
@@ -134,7 +135,7 @@ def sort_file(folder, p):
                         arch_dir_name = arch.resolve().stem  # створюємо назву папки, куди розпаковуємо архів (за назвою самого архіва)
                         path_to_unpack = Path(p, "archives", arch_dir_name) # створюємо шлях до папки розпаковки архіва
                         shutil.unpack_archive(arch, path_to_unpack)
-                        logger.info(f'Archiv {arch.name} was unpacked')
+                        logger.info(f"Archiv '{arch.name}' was unpacked")
                     except:
                         # print(f"Attention: Error unpacking the archive '{arch.name}'!\n")
                         logger.error(f"Error unpacking the archive '{arch.name}'!")
@@ -145,21 +146,29 @@ def sort_file(folder, p):
         elif j.is_dir() and not len(list(j.iterdir())):
             # delete empty folders:
             shutil.rmtree(j)
-            logger.info(f'Empty folder {j} was removed')
+            logger.info(f"Empty folder '{j}' was removed")
 
 
 def main():
-    # path = sys.argv[1]  # run from the command line: `clean-folder /path/to folder/you want to clean/`
-    path = r"/home/oleksandr/Стільниця/trash"
-    folder = Path(path)
+    logger = get_logger(__name__)
+
+    if len(sys.argv) > 1:
+        path = sys.argv[1]  # run from the command line: `clean-folder /path/to folder/you want to clean/`
+        
+    else:
+        print("Please write path to folder")
+        exit()
+
+    # path = r"/home/oleksandr/Стільниця/trash/"
+    folder = Path(path)    
     p = Path(path)
     try:
         sort_file(folder, p)
     except FileNotFoundError:
         print("\nThe folder was not found. Check the folder's path and run the command again!.\n")
-        return
-    return show_result(p)
-
-
-if __name__ == "__main__":
+        logger.error(f"The folder with path '{path}' was not found")
+    else:
+        return show_result(p)
+    
+if __name__ == "__main__": 
     main()

@@ -99,3 +99,101 @@
 2023-02-27 10:26:09,029 [INFO] - __mp_main__ -     create_list:41 - [SpawnPoolWorker-3]: 255
 2023-02-27 10:26:09,029 [INFO] - __mp_main__ -     create_list:41 - [SpawnPoolWorker-6]: 99999
 2023-02-27 10:26:09,567 [INFO] - __mp_main__ -     create_list:41 - [SpawnPoolWorker-3]: 10651060
+2023-02-27 10:35:33,242 [INFO] - __mp_main__ -     create_list:41 - [SpawnPoolWorker-3]: 128
+2023-02-27 10:35:33,242 [INFO] - __mp_main__ -     create_list:41 - [SpawnPoolWorker-3]: 255
+2023-02-27 10:35:33,250 [INFO] - __mp_main__ -     create_list:41 - [SpawnPoolWorker-3]: 99999
+2023-02-27 10:35:33,843 [INFO] - __mp_main__ -     create_list:41 - [SpawnPoolWorker-9]: 10651060
+2023-03-02 11:04:33,149 [INFO] - __main__ -  is_fold_exists:58 - Folder with name 'C:\Users\Rezerv\Desktop\trash\documents' was not exist and was created
+2023-03-02 11:04:33,149 [INFO] - __main__ -  is_fold_exists:58 - Folder with name 'C:\Users\Rezerv\Desktop\trash\other' was not exist and was created
+2023-03-02 11:04:33,149 [INFO] - __main__ -       normalize:34 - File name 'саша.txt' was normalized
+2023-03-02 11:04:33,149 [INFO] - __main__ -       normalize:34 - File name 'Novyj_tochechnyj_risunok.bmp' was normalized
+2023-03-02 11:04:33,149 [INFO] - __main__ -     folder_sort:69 - File with name 'Novyj_tochechnyj_risunok.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 11:04:33,165 [INFO] - __main__ -       sort_file:150 - Empty folder 'C:\Users\Rezerv\Desktop\trash\documents' was removed
+2023-03-02 11:04:33,165 [INFO] - __main__ -       normalize:34 - File name 'Новый точечный рисунок.bmp' was normalized
+2023-03-02 11:04:33,172 [INFO] - __main__ -  is_file_exists:46 - File with name 'Novyj_tochechnyj_risunok' is already exists and was renamed to Novyj_tochechnyj_risunok_02_03_2023_11_04_33_168739_.bmp
+2023-03-02 11:04:33,172 [INFO] - __main__ -  is_fold_exists:58 - Folder with name 'C:\Users\Rezerv\Desktop\trash\documents' was not exist and was created
+2023-03-02 11:04:33,179 [INFO] - __main__ -     folder_sort:69 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 11:04:33,180 [INFO] - __main__ -       normalize:34 - File name 'саша.txt' was normalized
+2023-03-02 11:04:33,182 [INFO] - __main__ -  is_file_exists:46 - File with name 'sasha' is already exists and was renamed to sasha_02_03_2023_11_04_33_182701_.txt
+2023-03-02 11:04:33,183 [INFO] - __main__ -     folder_sort:69 - File with name 'Новый точечный рисунок.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 11:04:33,183 [INFO] - __main__ -     folder_sort:69 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 12:15:02,024 [INFO] - __main__ -       normalize:34 - File name 'саша.txt' was normalized
+2023-03-02 12:15:02,024 [INFO] - __main__ -  is_file_exists:46 - File with name 'sasha' is already exists and was renamed to sasha_02_03_2023_12_15_02_024714_.txt
+2023-03-02 12:15:02,024 [INFO] - __main__ -       sort_file:127 - Empty folder 'C:\Users\Rezerv\Desktop\trash\вввв' was removed
+2023-03-02 12:15:02,024 [INFO] - __main__ -     folder_sort:69 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 12:15:02,024 [INFO] - __main__ -       sort_file:150 - Empty folder 'C:\Users\Rezerv\Desktop\trash\22222' was removed
+2023-03-02 12:17:07,560 [INFO] - __main__ -  is_fold_exists:58 - Folder with name 'C:\Users\Rezerv\Desktop\trash\other' was not exist and was created
+2023-03-02 12:17:07,560 [INFO] - __main__ -       normalize:34 - File name 'рисунок.bmp' was normalized
+2023-03-02 12:17:07,560 [INFO] - __main__ -       normalize:34 - File name 'рисунок.bmp' was normalized
+2023-03-02 12:17:07,560 [INFO] - __main__ -       normalize:34 - File name 'рисунок.bmp' was normalized
+2023-03-02 12:17:07,560 [INFO] - __main__ -  is_fold_exists:58 - Folder with name 'C:\Users\Rezerv\Desktop\trash\documents' was not exist and was created
+2023-03-02 12:17:07,576 [INFO] - __main__ -     folder_sort:69 - File with name 'рисунок.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 12:17:07,576 [INFO] - __main__ -       normalize:34 - File name 'саша.txt' was normalized
+2023-03-02 12:17:07,560 [INFO] - __main__ -       normalize:34 - File name 'саша.txt' was normalized
+2023-03-02 12:17:07,576 [INFO] - __main__ -       normalize:34 - File name 'саша.txt' was normalized
+2023-03-02 12:17:07,576 [INFO] - __main__ -  is_file_exists:46 - File with name 'risunok' is already exists and was renamed to risunok_02_03_2023_12_17_07_576380_.bmp
+2023-03-02 12:17:07,576 [INFO] - __main__ -     folder_sort:69 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 12:17:07,576 [INFO] - __main__ -     folder_sort:69 - File with name 'рисунок.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 12:17:07,576 [INFO] - __main__ -  is_file_exists:46 - File with name 'sasha' is already exists and was renamed to sasha_02_03_2023_12_17_07_576380_.txt
+2023-03-02 12:17:07,576 [INFO] - __main__ -  is_file_exists:46 - File with name 'sasha' is already exists and was renamed to sasha_02_03_2023_12_17_07_576380_.txt
+2023-03-02 12:17:07,576 [INFO] - __main__ -     folder_sort:69 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 12:17:07,576 [INFO] - __main__ -     folder_sort:69 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 12:22:16,881 [INFO] - __main__ -       sort_file:128 - Empty folder 'C:\Users\Rezerv\Desktop\trash\hhhh' was removed
+2023-03-02 12:22:16,881 [INFO] - __main__ -       sort_file:128 - Empty folder 'C:\Users\Rezerv\Desktop\trash\llll' was removed
+2023-03-02 12:22:16,881 [INFO] - __main__ -       normalize:35 - File name 'рисунок.bmp' was normalized
+2023-03-02 12:22:16,881 [INFO] - __main__ -  is_file_exists:47 - File with name 'risunok' is already exists and was renamed to risunok_02_03_2023_12_22_16_881848_.bmp
+2023-03-02 12:22:16,881 [INFO] - __main__ -     folder_sort:70 - File with name 'рисунок.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 12:23:51,081 [INFO] - __main__ -  is_fold_exists:59 - Folder with name 'C:\Users\Rezerv\Desktop\trash\other' was not exist and was created
+2023-03-02 12:23:51,081 [INFO] - __main__ -       normalize:35 - File name 'рисунок.bmp' was normalized
+2023-03-02 12:23:51,081 [INFO] - __main__ -       normalize:35 - File name 'рисунок.bmp' was normalized
+2023-03-02 12:23:51,081 [INFO] - __main__ -     folder_sort:70 - File with name 'рисунок.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 12:23:51,081 [INFO] - __main__ -  is_fold_exists:59 - Folder with name 'C:\Users\Rezerv\Desktop\trash\documents' was not exist and was created
+2023-03-02 12:23:51,081 [INFO] - __main__ -       normalize:35 - File name 'рисунок.bmp' was normalized
+2023-03-02 12:23:51,081 [INFO] - __main__ -       normalize:35 - File name 'саша.txt' was normalized
+2023-03-02 12:23:51,081 [INFO] - __main__ -       normalize:35 - File name 'саша.txt' was normalized
+2023-03-02 12:23:51,081 [INFO] - __main__ -  is_file_exists:47 - File with name 'risunok' is already exists and was renamed to risunok_02_03_2023_12_23_51_081207_.bmp
+2023-03-02 12:23:51,081 [INFO] - __main__ -       normalize:35 - File name 'саша.txt' was normalized
+2023-03-02 12:23:51,081 [INFO] - __main__ -     folder_sort:70 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 12:23:51,081 [INFO] - __main__ -  is_file_exists:47 - File with name 'risunok' is already exists and was renamed to risunok_02_03_2023_12_23_51_081207_.bmp
+2023-03-02 12:23:51,096 [INFO] - __main__ -  is_file_exists:47 - File with name 'sasha' is already exists and was renamed to sasha_02_03_2023_12_23_51_096829_.txt
+2023-03-02 12:23:51,096 [INFO] - __main__ -     folder_sort:70 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 12:23:51,096 [INFO] - __main__ -     folder_sort:70 - File with name 'рисунок.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 12:23:51,096 [INFO] - __main__ -  is_file_exists:47 - File with name 'sasha' is already exists and was renamed to sasha_02_03_2023_12_23_51_096829_.txt
+2023-03-02 12:23:51,096 [INFO] - __main__ -     folder_sort:70 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 13:03:30,064 [INFO] - __main__ -       sort_file:127 - Empty folder 'C:\Users\Rezerv\Desktop\trash\1111' was removed
+2023-03-02 13:03:30,086 [INFO] - __main__ -       normalize:35 - File name 'рисунок.bmp' was normalized
+2023-03-02 13:03:30,117 [INFO] - __main__ -  is_file_exists:47 - File with name 'risunok' is already exists and was renamed to risunok_02_03_2023_13_03_30_117801_.bmp
+2023-03-02 13:03:30,117 [INFO] - __main__ -     folder_sort:70 - File with name 'рисунок.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 13:05:01,942 [INFO] - __main__ -       sort_file:127 - Empty folder 'C:\Users\Rezerv\Desktop\trash\5555' was removed
+2023-03-02 13:13:53,367 [INFO] - __main__ -  is_fold_exists:59 - Folder with name 'C:\Users\Rezerv\Desktop\trash\other' was not exist and was created
+2023-03-02 13:13:53,367 [INFO] - __main__ -       normalize:35 - File name 'рисунок.bmp' was normalized
+2023-03-02 13:13:53,367 [INFO] - __main__ -  is_fold_exists:59 - Folder with name 'C:\Users\Rezerv\Desktop\trash\documents' was not exist and was created
+2023-03-02 13:13:53,367 [INFO] - __main__ -     folder_sort:70 - File with name 'рисунок.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 13:13:53,367 [INFO] - __main__ -       normalize:35 - File name 'саша.txt' was normalized
+2023-03-02 13:13:53,367 [INFO] - __main__ -     folder_sort:70 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 13:13:53,367 [INFO] - __main__ -       normalize:35 - File name 'рисунок.bmp' was normalized
+2023-03-02 13:13:53,367 [INFO] - __main__ -       normalize:35 - File name 'саша.txt' was normalized
+2023-03-02 13:13:53,367 [INFO] - __main__ -  is_file_exists:47 - File with name 'sasha' is already exists and was renamed to sasha_02_03_2023_13_13_53_367717_.txt
+2023-03-02 13:13:53,367 [INFO] - __main__ -  is_file_exists:47 - File with name 'risunok' is already exists and was renamed to risunok_02_03_2023_13_13_53_367717_.bmp
+2023-03-02 13:13:53,367 [INFO] - __main__ -       normalize:35 - File name 'рисунок.bmp' was normalized
+2023-03-02 13:13:53,367 [INFO] - __main__ -     folder_sort:70 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 13:13:53,367 [INFO] - __main__ -     folder_sort:70 - File with name 'рисунок.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 13:13:53,367 [INFO] - __main__ -       normalize:35 - File name 'саша.txt' was normalized
+2023-03-02 13:13:53,367 [INFO] - __main__ -  is_file_exists:47 - File with name 'risunok' is already exists and was renamed to risunok_02_03_2023_13_13_53_367717_.bmp
+2023-03-02 13:13:53,367 [INFO] - __main__ -     folder_sort:70 - File with name 'рисунок.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 13:13:53,367 [INFO] - __main__ -       normalize:35 - File name 'рисунок.bmp' was normalized
+2023-03-02 13:13:53,367 [INFO] - __main__ -  is_file_exists:47 - File with name 'sasha' is already exists and was renamed to sasha_02_03_2023_13_13_53_367717_.txt
+2023-03-02 13:13:53,367 [INFO] - __main__ -       normalize:35 - File name 'саша.txt' was normalized
+2023-03-02 13:13:53,367 [INFO] - __main__ -     folder_sort:70 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 13:13:53,367 [INFO] - __main__ -  is_file_exists:47 - File with name 'risunok' is already exists and was renamed to risunok_02_03_2023_13_13_53_367717_.bmp
+2023-03-02 13:13:53,367 [INFO] - __main__ -     folder_sort:70 - File with name 'рисунок.bmp' was removed to C:\Users\Rezerv\Desktop\trash\other
+2023-03-02 13:13:53,367 [INFO] - __main__ -  is_file_exists:47 - File with name 'sasha' is already exists and was renamed to sasha_02_03_2023_13_13_53_367717_.txt
+2023-03-02 13:13:53,367 [INFO] - __main__ -       sort_file:147 - Empty folder 'C:\Users\Rezerv\Desktop\trash\Новая папка' was removed
+2023-03-02 13:13:53,367 [INFO] - __main__ -       sort_file:147 - Empty folder 'C:\Users\Rezerv\Desktop\trash\Новая папка (2)' was removed
+2023-03-02 13:13:53,367 [INFO] - __main__ -       sort_file:147 - Empty folder 'C:\Users\Rezerv\Desktop\trash\Новая папка (3)' was removed
+2023-03-02 13:13:53,367 [INFO] - __main__ -     folder_sort:70 - File with name 'саша.txt' was removed to C:\Users\Rezerv\Desktop\trash\documents
+2023-03-02 13:17:07,355 [ERROR] - __main__ -            main:168 - The folder with path 'C:\Users\Rezerv\Desktop\trash\1' was not found
+2023-03-02 13:19:26,864 [INFO] - __mp_main__ -     create_list:41 - [SpawnPoolWorker-1]: 128
+2023-03-02 13:19:26,864 [INFO] - __mp_main__ -     create_list:41 - [SpawnPoolWorker-1]: 255
+2023-03-02 13:19:26,864 [INFO] - __mp_main__ -     create_list:41 - [SpawnPoolWorker-1]: 99999
+2023-03-02 13:19:27,396 [INFO] - __mp_main__ -     create_list:41 - [SpawnPoolWorker-1]: 10651060

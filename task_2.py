@@ -44,7 +44,7 @@ def create_list(num):
 
 @get_time
 def factorize_1(*number):
-    with Pool(cpu_count() * 3) as p:
+    with Pool(cpu_count()) as p:
         result = p.map(create_list, number)
     return result
 

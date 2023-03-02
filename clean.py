@@ -3,9 +3,10 @@ import shutil
 import sys
 from datetime import datetime
 from pathlib import Path
-from threading import Thread
+from threading import Thread, RLock
 from logger_ import get_logger
 
+lock = RLock()
 
 logger = get_logger(__name__)
 
@@ -21,7 +22,8 @@ extension_dict = {
 # Create rule of chanding Cyrillic letters to Latin letters
 CYRILLIC_SYMBOLS = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяєіїґ?<>,!@#[]#$%^&*()-=; "
 TRANSLATION = ("a", "b", "v", "g", "d", "e", "e", "j", "z", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u",
-               "f", "h", "ts", "ch", "sh", "sch", "", "y", "", "e", "yu", "ya", "je", "i", "ji", "g", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_","_", "_")
+               "f", "h", "ts", "ch", "sh", "sch", "", "y", "", "e", "yu", "ya", "je", "i", "ji", "g", "_", "_", "_",
+               "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_")
 TRANS = {}
 for c, t in zip(CYRILLIC_SYMBOLS, TRANSLATION):
     TRANS[ord(c)] = t
@@ -52,22 +54,21 @@ def is_fold_exists(file, to_dir):
     """ Перевіряємо чи існує необхідна папка, якщо немає - створюємо;
     file - посилання на файл, який переміщаємо;    dr - посилання на папку, куди необхідно перемістити файл."""
     if to_dir.exists():
-        Thread(target=folder_sort, args=(file, to_dir)).start()
+        Thread(target=folder_sort, args=(lock, file, to_dir)).start()
     else:
         Path(to_dir).mkdir()
         logger.info(f"Folder with name '{to_dir}' was not exist and was created")
-        Thread(target=folder_sort, args=(file, to_dir)).start()
-    
+        Thread(target=folder_sort, args=(lock, file, to_dir)).start()
 
-def folder_sort(file, to_dir):
+
+def folder_sort(locker, file, to_dir):
     """ змінює назву файла та переміщає в необхідну папку.
     file - посилання на файл,  який переміщаємо;    dr - посилання, на папку, куди необхідно перемістити файл."""
-    latin_name = normalize(file.name)    
-    new_file = Path(to_dir, latin_name) 
-    file_path = is_file_exists(new_file, to_dir) 
-    file.replace(file_path) 
+    latin_name = normalize(file.name)
+    new_file = Path(to_dir, latin_name)
+    file_path = is_file_exists(new_file, to_dir)
+    file.replace(file_path)
     logger.info(f"File with name '{file.name}' was removed to {to_dir}")
-
 
 
 def show_result(p):
@@ -79,7 +80,7 @@ def show_result(p):
             for file in item.iterdir():
                 if file.is_file():
                     total_dict[item.name].append(file.suffix)
-                    files_dict[item.name].append(file.name) 
+                    files_dict[item.name].append(file.name)
     for k, v in files_dict.items():
         print()
         print(f" Folder '{k}' contains files: ")
@@ -99,11 +100,10 @@ def show_result(p):
     print()
 
 
-
 def sort_file(folder, p):
     """ Check extension of files, subfolders and sort it"""
     for i in p.iterdir():
-        if i.name in ("documents", "audio", "video", "images", "archives", "other"): # script ignors these folders.
+        if i.name in ("documents", "audio", "video", "images", "archives", "other"):  # script ignors these folders.
             continue
         if i.is_file():
             flag = False  # if flag stay False - file's extension is not in extension_dict and we need move this file to "other"
@@ -114,17 +114,16 @@ def sort_file(folder, p):
                     flag = True  # if file's extension was founded in extension_dict, flag == True
                 else:
                     continue
-            if not flag: 
+            if not flag:
                 # if flag == False: extension of file was not founded in extension_dict. We need move this file to "other"
                 to_dir = Path(folder, "other")
                 is_fold_exists(i, to_dir)
         elif i.is_dir():
             if len(list(i.iterdir())) != 0:
-                sort_file(folder, i) # if folder is not empty, recursively sort_file()
+                sort_file(folder, i)  # if folder is not empty, recursively sort_file()
             else:
                 shutil.rmtree(i)  # delete empty folders
                 logger.info(f"Empty folder '{i}' was removed")
-
 
     for j in p.iterdir():
         # unpacking archives
@@ -133,7 +132,7 @@ def sort_file(folder, p):
                 if arch.is_file() and arch.suffix in (".zip", ".gz", ".tar"):
                     try:
                         arch_dir_name = arch.resolve().stem  # створюємо назву папки, куди розпаковуємо архів (за назвою самого архіва)
-                        path_to_unpack = Path(p, "archives", arch_dir_name) # створюємо шлях до папки розпаковки архіва
+                        path_to_unpack = Path(p, "archives", arch_dir_name)  # створюємо шлях до папки розпаковки архіва
                         shutil.unpack_archive(arch, path_to_unpack)
                         logger.info(f"Archiv '{arch.name}' was unpacked")
                     except:
@@ -154,13 +153,14 @@ def main():
 
     if len(sys.argv) > 1:
         path = sys.argv[1]  # run from the command line: `clean-folder /path/to folder/you want to clean/`
-        
+
     else:
         print("Please write path to folder")
         exit()
 
     # path = r"/home/oleksandr/Стільниця/trash/"
-    folder = Path(path)    
+    # path = r"C:\Users\Rezerv\Desktop\trash"
+    folder = Path(path)
     p = Path(path)
     try:
         sort_file(folder, p)
@@ -169,6 +169,7 @@ def main():
         logger.error(f"The folder with path '{path}' was not found")
     else:
         return show_result(p)
-    
-if __name__ == "__main__": 
+
+
+if __name__ == "__main__":
     main()
